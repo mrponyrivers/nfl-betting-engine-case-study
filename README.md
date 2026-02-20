@@ -12,19 +12,19 @@ This repo showcases **workflow engineering, automation, and evaluation** while k
 
 ---
 
+## Walkthrough video
+
+YouTube demo (unlisted): https://www.youtube.com/watch?v=xI88nChjKWU
+
+---
+
 ## Why I built it
 
 I wanted a system that treats betting as a **pricing + risk + process** problem:
 - not just “pick the better team”
-- but **consistently identify mispriced lines**, size stakes responsibly, and evaluate performance over time.
+- but **consistently identify mispriced lines**, size stakes responsibly, and evaluate performance over time
 
-This project is also a strong example of what I enjoy building as an **AI Workflow Engineer**: turning messy real-world inputs into reliable outputs (structured data, exports, repeatable runs).
-
----
-
-## Walkthrough video
-
-YouTube demo (unlisted): https://www.youtube.com/watch?v=xI88nChjKWU
+This project is also a strong example of what I enjoy building as an **AI Workflow Engineer**: turning messy real-world inputs into reliable outputs (**structured data, exports, repeatable runs**).
 
 ---
 
@@ -42,6 +42,29 @@ YouTube demo (unlisted): https://www.youtube.com/watch?v=xI88nChjKWU
 - Personal bankroll info
 - Full workbook(s) with production logic
 - Any bookmaker account details
+
+---
+
+## Screenshots (blurred/redacted)
+
+These screenshots are intentionally blurred to protect sensitive details (keys, bankroll, proprietary thresholds).
+
+> Place images in `docs/screenshots/` using these exact filenames:
+
+- **System overview**  
+  ![](docs/screenshots/01_overview.png)
+
+- **Odds normalization**  
+  ![](docs/screenshots/02_odds_normalization.png)
+
+- **EV + Kelly recommendations**  
+  ![](docs/screenshots/03_ev_kelly.png)
+
+- **Bet log + settlement**  
+  ![](docs/screenshots/04_betlog_settlement.png)
+
+- **CLV tracking (optional)**  
+  ![](docs/screenshots/05_clv.png)
 
 ---
 
@@ -78,94 +101,62 @@ flowchart LR
   B --> I[Closing Lines]
   G --> J[CLV Tracking]
   I --> J
---
-Weekly workflow (how it runs)
+---
 
-Update odds
+## Weekly workflow (how it runs)
 
-Pull latest odds and normalize to a master table
+1) **Update odds**
+- Pull latest odds and normalize to a master table
 
-Update model inputs
+2) **Update model inputs**
+- Refresh team stats / power ratings
+- Generate model probabilities
 
-Refresh team stats / power ratings
+3) **Compare vs market**
+- Market implied probability vs model probability
+- Compute EV and select candidates
 
-Generate model probabilities
+4) **Size stakes**
+- Kelly (or fractional Kelly) based on edge + price
 
-Compare vs market
+5) **Log bets**
+- Store entry lines + odds + timestamp
 
-Market implied probability vs model probability
+6) **Track CLV + settle**
+- Compare entry line to closing line
+- Record results and update history metrics
 
-Compute EV, select candidates
+---
 
-Size stakes
+## Sample data (safe, fake)
 
-Kelly (or fractional Kelly) based on edge + price
+This repo includes safe fake samples to show schemas and outputs:
+- `samples/sample_odds.csv`
+- `samples/sample_model_probs.csv`
+- `samples/sample_bet_log.csv`
+- `samples/sample_outputs.csv`
 
-Log bets
+---
 
-Store entry lines + odds + timestamp
+## Outputs (what the engine produces)
 
-Track CLV + settle
+Typical artifacts:
+- Normalized odds feed
+- Model probability table
+- EV / Kelly recommendations
+- Bet log (entries)
+- Settlement ledger (results)
+- CLV report (entry vs close)
 
-Compare to closing line
+---
 
-Record results and update history metrics
-
-Sample data (safe, fake)
-
-This repo includes fake samples to show schemas and outputs:
-
-samples/sample_odds.csv
-
-samples/sample_model_probs.csv
-
-samples/sample_bet_log.csv
-
-samples/sample_outputs.csv
-
-Outputs (what the engine produces)
-
-Typical output artifacts:
-
-Clean normalized odds feed
-
-Model probability table
-
-EV / Kelly recommendation table
-
-Bet log (entries)
-
-Settlement ledger (results)
-
-CLV report (entry vs close)
-
-Screenshots (blurred/redacted)
-
-These screenshots are intentionally blurred to protect sensitive details (keys, bankroll, proprietary thresholds).
-
-Put your images in docs/screenshots/ and name them like the examples below.
-
-System overview
-
-
-Odds normalization
-
-
-EV + Kelly recommendations
-
-
-Bet log + settlement
-
-
-CLV tracking (optional)
-
-
-Responsible note
+## Responsible note
 
 This project is shared as a workflow/engineering case study. Betting involves risk and variance. Any system like this should be evaluated with careful bankroll management and realistic expectations.
 
-Links
+---
 
-GitHub profile: https://github.com/mrponyrivers
+## Links
 
-Streamlit demos hub: https://share.streamlit.io/user/mrponyrivers
+- GitHub profile: https://github.com/mrponyrivers
+- Streamlit demos hub: https://share.streamlit.io/user/mrponyrivers
