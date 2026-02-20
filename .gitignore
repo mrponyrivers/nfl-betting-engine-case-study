@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+
+# Outputs / generated files
+output/
+outputs/
+data/private/
+private/
+secrets/
+
+# Spreadsheets (keep private)
+*.xlsx
+*.xlsm
+*.xls
+*.gsheet
+
+# OS
+.DS_Store
+
+# Logs
+*.log
