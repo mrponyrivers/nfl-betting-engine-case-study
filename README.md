@@ -25,6 +25,11 @@ git add README.md docs/screenshots
 git commit -m "Add blurred screenshots section"
 git push
 ---
+
+## Walkthrough video
+
+YouTube demo (unlisted): https://www.youtube.com/watch?v=xI88nChjKWU
+
 ## What’s included in this public repo
 
 ✅ Included
