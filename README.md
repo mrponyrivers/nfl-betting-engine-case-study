@@ -49,22 +49,28 @@ This project is also a strong example of what I enjoy building as an **AI Workfl
 
 These screenshots are intentionally blurred to protect sensitive details (keys, bankroll, proprietary thresholds).
 
-> Place images in `docs/screenshots/` using these exact filenames:
+**Required folder:** `docs/screenshots/`  
+**Required filenames (exact):**
+- `01_overview.png`
+- `02_odds_normalization.png`
+- `03_ev_kelly.png`
+- `04_betlog_settlement.png`
+- `05_clv.png` (optional)
 
-- **System overview**  
-  ![](docs/screenshots/01_overview.png)
+### System overview
+<img src="docs/screenshots/01_overview.png" width="900" />
 
-- **Odds normalization**  
-  ![](docs/screenshots/02_odds_normalization.png)
+### Odds normalization
+<img src="docs/screenshots/02_odds_normalization.png" width="900" />
 
-- **EV + Kelly recommendations**  
-  ![](docs/screenshots/03_ev_kelly.png)
+### EV + Kelly recommendations
+<img src="docs/screenshots/03_ev_kelly.png" width="900" />
 
-- **Bet log + settlement**  
-  ![](docs/screenshots/04_betlog_settlement.png)
+### Bet log + settlement
+<img src="docs/screenshots/04_betlog_settlement.png" width="900" />
 
-- **CLV tracking (optional)**  
-  ![](docs/screenshots/05_clv.png)
+### CLV tracking (optional)
+<img src="docs/screenshots/05_clv.png" width="900" />
 
 ---
 
