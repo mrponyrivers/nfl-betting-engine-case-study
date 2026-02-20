@@ -74,3 +74,23 @@ flowchart LR
   I --> J
 
 
+---
+
+## Screenshots (blurred/redacted)
+
+These screenshots are intentionally blurred to protect sensitive details (keys, bankroll, proprietary thresholds).
+
+- **System overview**
+  ![](docs/screenshots/01_overview.png)
+
+- **Odds normalization**
+  ![](docs/screenshots/02_odds_normalization.png)
+
+- **EV + Kelly recommendations**
+  ![](docs/screenshots/03_ev_kelly.png)
+
+- **Bet log + settlement**
+  ![](docs/screenshots/04_betlog_settlement.png)
+
+- **CLV tracking (optional)**
+  ![](docs/screenshots/05_clv.png)
