@@ -21,7 +21,10 @@ I wanted a system that treats betting as a **pricing + risk + process** problem:
 This project is also a strong example of what I enjoy building as an **AI Workflow Engineer**: turning messy real-world inputs into reliable outputs (structured data, exports, repeatable runs).
 
 ---
-
+git add README.md docs/screenshots
+git commit -m "Add blurred screenshots section"
+git push
+---
 ## What’s included in this public repo
 
 ✅ Included
@@ -74,23 +77,3 @@ flowchart LR
   I --> J
 
 
----
-
-## Screenshots (blurred/redacted)
-
-These screenshots are intentionally blurred to protect sensitive details (keys, bankroll, proprietary thresholds).
-
-- **System overview**
-  ![](docs/screenshots/01_overview.png)
-
-- **Odds normalization**
-  ![](docs/screenshots/02_odds_normalization.png)
-
-- **EV + Kelly recommendations**
-  ![](docs/screenshots/03_ev_kelly.png)
-
-- **Bet log + settlement**
-  ![](docs/screenshots/04_betlog_settlement.png)
-
-- **CLV tracking (optional)**
-  ![](docs/screenshots/05_clv.png)
