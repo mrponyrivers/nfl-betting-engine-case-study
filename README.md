@@ -69,8 +69,6 @@ These screenshots are intentionally blurred to protect sensitive details (keys, 
 ### Bet log + settlement
 <img src="docs/screenshots/04_betlog_settlement.png" width="900" />
 
-### CLV tracking (optional)
-<img src="docs/screenshots/05_clv.png" width="900" />
 
 ---
 
@@ -107,6 +105,9 @@ flowchart LR
   B --> I[Closing Lines]
   G --> J[CLV Tracking]
   I --> J
+```
+...diagram lines...
+
 ---
 
 ## Weekly workflow (how it runs)
